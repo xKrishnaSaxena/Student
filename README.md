@@ -1,10 +1,3 @@
-## I used react router to navigate between the websites using the BrowserRouter , Routes , Route , Link tags 
-## I fetched the username from the params using the useParams function to pass it between the student home and student details page
-## If the url do not contain the username which means we are on the student home page hence there is no need to display the student home link so i used conditional rendering to render it according to it
-## In the Student Home and Student Details page i only hardcoded the username and phone number and passed username from the student home to student by adding the username at the end of the string in the link tag
-
-### The mistake that i was making during the technical round was that i by mistake installed the react-router-dom outside the project folder hence useRef was interfering while the render 
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

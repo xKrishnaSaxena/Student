@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Route,
   Routes,
   Link,
@@ -13,7 +13,7 @@ function App() {
   const { username } = useParams();
 
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route
           path="/"
@@ -24,7 +24,7 @@ function App() {
         <Route path="/studentDetails/:username" element={<StudentDetails />} />
       </Routes>
       {!username ? "" : <Link to="/studentHome">Student Home</Link>}
-    </Router>
+    </BrowserRouter>
   );
 }
 
